@@ -5,7 +5,7 @@ let titleProject;
 let screensValue;
 let screenPrice;
 let percentage = 10;
-let fullPrice = 200000;
+let fullPrice;
 let responsive;
 
 let service;
@@ -100,8 +100,7 @@ do {
 } while (
   screenPrice === null ||
   screenPrice.trim() === "" ||
-  !checkIsNumber(screenPrice) ||
-  screenPrice < 0
+  !checkIsNumber(screenPrice)
 );
 
 screenPrice = +screenPrice;
